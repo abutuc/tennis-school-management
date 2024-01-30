@@ -1,0 +1,8 @@
+# IDE files
+.vscode/
+
+# Logs
+*.log
+
+# Miscellaneous
+.DS_Store
