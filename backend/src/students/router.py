@@ -1,9 +1,9 @@
 from typing import List
 from fastapi import APIRouter
-from dependencies import SessionDep
-from exceptions import NotFoundException
-from students.schemas import Student, StudentCreate
-from . import service as student_service
+from src.dependencies import SessionDep
+from src.exceptions import NotFoundException
+from src.students.schemas import Student, StudentCreate
+from src.students import service as student_service
 import logging
 
 router = APIRouter()

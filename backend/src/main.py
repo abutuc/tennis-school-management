@@ -1,8 +1,11 @@
+import sys
+print("Current sys.path:", sys.path)
+
 from fastapi import FastAPI
 import logging
-from students.router import router as studentsRouter
-from exceptions import GenericTennisSchoolException
-from exception_handler import exception_handler
+from src.students.router import router as studentsRouter
+from src.exceptions import GenericTennisSchoolException
+from src.exception_handler import exception_handler
 
 app = FastAPI()
 

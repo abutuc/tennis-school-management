@@ -1,7 +1,7 @@
 from fastapi import Request
 from fastapi.responses import JSONResponse
 
-from exceptions import GenericTennisSchoolException
+from src.exceptions import GenericTennisSchoolException
 
 async def exception_handler(request: Request, exc: GenericTennisSchoolException):
     return JSONResponse(

@@ -1,6 +1,6 @@
 from typing import Annotated, Generator
 from fastapi import Depends
-from database import ScopedSession
+from src.database import ScopedSession
 from sqlalchemy.orm import Session
 
 

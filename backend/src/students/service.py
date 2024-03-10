@@ -1,7 +1,7 @@
 from typing import List, Optional
 from sqlalchemy.orm import Session
-from students.models import StudentEntity
-from students.schemas import Student, StudentCreate
+from src.students.models import StudentEntity
+from src.students.schemas import Student, StudentCreate
 
 def get_all(*, db_session : Session) -> List[Optional[Student]]:
     """Returns all registered students."""
